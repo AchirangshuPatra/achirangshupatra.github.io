@@ -456,6 +456,117 @@ section {
         margin: 0;
     }
 
+    /* Organizing Activities Section */
+    .activities {
+        background: white;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #6b7280;
+        margin-bottom: 3rem;
+        font-weight: 400;
+    }
+
+    .activities-table-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+    }
+
+    .activities-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        font-size: 0.9rem;
+    }
+
+    .activities-table th {
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        color: white;
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .activities-table th:first-child {
+        width: 60px;
+    }
+
+    .activities-table th:nth-child(2) {
+        width: 25%;
+    }
+
+    .activities-table th:nth-child(3) {
+        width: 30%;
+    }
+
+    .activities-table th:nth-child(4) {
+        width: 35%;
+    }
+
+    .activities-table td {
+        padding: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+        vertical-align: top;
+        line-height: 1.5;
+    }
+
+    .activities-table tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    .activities-table tr:hover {
+        background: #e0e7ff;
+        transition: background 0.3s ease;
+    }
+
+    .activities-summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .summary-card {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border-radius: 15px;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .summary-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 1rem;
+    }
+
+    .summary-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #3b82f6;
+        margin: 0;
+    }
+
     /* CV Section */
     .cv {
         background: #f8fafc;
@@ -932,6 +1043,20 @@ section {
 
     .pdf-container {
         height: 400px;
+    }
+
+    .activities-table {
+        font-size: 0.8rem;
+    }
+
+    .activities-table th,
+    .activities-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .activities-summary {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .section-title {
