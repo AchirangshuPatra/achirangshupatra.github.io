@@ -532,6 +532,73 @@ section {
         transition: background 0.3s ease;
     }
 
+    .activity-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .activity-item::before {
+        content: '';
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .activity-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: white;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .activity-icon:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .activity-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        flex: 1;
+    }
+
+    .activity-type {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #3b82f6;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: rgba(59, 130, 246, 0.1);
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .activity-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #1f2937;
+        line-height: 1.4;
+    }
+
     .activities-summary {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1058,6 +1125,41 @@ section {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .activity-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .activity-item::before {
+        display: none;
+    }
+
+    .activity-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .activity-content {
+        align-items: center;
+    }
+
+    .activity-type {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .activity-title {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
+
+
 
     .section-title {
         font-size: 2rem;

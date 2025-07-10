@@ -329,4 +329,5 @@ revealStyle.textContent = `
         transform: translateY(0) !important;
     }
 `;
-document.head.appendChild(revealStyle); 
+document.head.appendChild(revealStyle);
+
