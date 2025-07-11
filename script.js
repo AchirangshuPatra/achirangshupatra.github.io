@@ -331,3 +331,30 @@ revealStyle.textContent = `
 `;
 document.head.appendChild(revealStyle);
 
+// =====================
+// Hero Image Slider
+// =====================
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+        });
+        slides[index].classList.add('active');
+    }
+
+    function startSlider() {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 5000); // Change image every 5 seconds
+    }
+
+    if (slides.length > 0) {
+        showSlide(currentIndex);
+        startSlider();
+    }
+});
+
