@@ -1024,6 +1024,30 @@ section {
         width: 0;
     }
 }
+/* Hero Image Slider Styles */
+.slider {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1194,24 +1218,4 @@ section {
         font-size: 2.5rem;
     }
 } 
-    .slider {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: none;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .slide.active {
-        display: block;
-    }
+ 
