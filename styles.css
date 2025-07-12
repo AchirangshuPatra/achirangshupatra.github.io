@@ -1194,7 +1194,6 @@ section {
         font-size: 2.5rem;
     }
 } 
-<style>
     .slider {
         position: relative;
         width: 300px;
@@ -1216,4 +1215,3 @@ section {
     .slide.active {
         display: block;
     }
-</style>
