@@ -55,35 +55,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Achirangshu Patra</h1>
-                <p class="hero-subtitle">Ph.D. Scholar in Mechatronics Engineering & Assistant Professor</p>
-                <p class="hero-description">
-                    Specialized in Industrial Automation, AI/ML applications, and Industry 4.0 solutions. 
-                    Experienced in PLC programming, SCADA systems, robotics, and predictive maintenance. 
-                    Passionate about driving innovation in smart factory implementations and digital twins.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-avatar">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="profile-info">
-                        <h3>Achirangshu Patra</h3>
-                        <p>Ph.D. Scholar & Assistant Professor</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
 	
 	<!-- Hero Section -->
 <section id="home" class="hero">
@@ -115,54 +86,6 @@
         </div>
     </div>
 </section>
-
-<!-- Add this script before </body> -->
-<script>
-    const slides = document.querySelectorAll('.slide');
-    let current = 0;
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = 'none';
-        });
-        slides[index].style.display = 'block';
-    }
-
-    function nextSlide() {
-        current = (current + 1) % slides.length;
-        showSlide(current);
-    }
-
-    // Init
-    showSlide(current);
-    setInterval(nextSlide, 3000);
-</script>
-
-<!-- Add this in your CSS -->
-<style>
-    .slider {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: none;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .slide.active {
-        display: block;
-    }
-</style>
-
 
     <!-- About Section -->
     <section id="about" class="about">
