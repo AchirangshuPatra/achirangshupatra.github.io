@@ -351,3 +351,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(nextSlide, 3000);
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll('.activity-slide');
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[i].classList.add('active');
+  }
+
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }, 3000); // change every 3 seconds
+});
+
